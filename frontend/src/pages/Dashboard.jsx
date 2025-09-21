@@ -15,6 +15,7 @@ import {
 } from "@mui/material";
 import TabView from "../layouts/TabView";
 import { getDeviceType } from "../utils/utils";
+import { getCruxData } from "../utils/api";
 
 export default function Dashboard() {
   const [input, setInput] = useState("");
