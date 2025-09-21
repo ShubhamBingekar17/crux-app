@@ -1,3 +1,8 @@
+const fetch = require("node-fetch");
+require("dotenv").config();
+
+const API_KEY = process.env.CRUX_API_KEY;
+const CRUX_ENDPOINT = `https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${API_KEY}`;
 
 async function getCruxData(req, res) {
   const urls = req.body.urls || [];
