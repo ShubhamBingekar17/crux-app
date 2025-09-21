@@ -1,4 +1,4 @@
-# CrUX Demo App
+# CrUX App
 
 This is a minimal demo full-stack application that queries the Chrome UX Report (CrUX) API and displays results.
 
@@ -27,3 +27,15 @@ CrUX API:
 This app calls the CrUX endpoint:
 POST https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=YOUR_KEY
 Body: { "url":"https://example.com", "device":"DESKTOP" }
+
+
+### Known Issues
+
+- **Search filter**: Tab isn't auto selected when we search a particular url.
+- **CORS blocking**: CORS is set to be allow from all origins (Risky in production env).
+- **UI enchancements**: UI is not appealing up to the mark.
+
+
+### Next Step
+- Provide comparative analytics with different URL's
+- Enchance UI with highly mobile friendly responsiveness
