@@ -5,7 +5,7 @@ const API_KEY = process.env.CRUX_API_KEY;
 const CRUX_ENDPOINT = `https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=${API_KEY}`;
 
 async function queryCrux(url, device = "DESKTOP", metrics = null) {
-  const body = { url, device };
+  const body = { url, formFactor: device };
   if (metrics) body.metrics = metrics;
 
   const res = await fetch(CRUX_ENDPOINT, {

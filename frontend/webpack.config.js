@@ -13,7 +13,11 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     proxy: {
-      '/api': 'http://localhost:4000'
+      '/api': {
+        target: 'https://crux-backend-nine.vercel.app',
+        changeOrigin: true,
+        secure: true
+      }
     }
   },
   module: {
