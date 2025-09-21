@@ -1,4 +1,5 @@
 const express = require("express");
+const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
 const cruxRoutes = require("./routes/cruxRoutes");
 
@@ -9,3 +10,4 @@ app.use(bodyParser.json());
 app.use("/api", cruxRoutes);
 
 module.exports = app;
+module.exports.handler = serverless(app);
