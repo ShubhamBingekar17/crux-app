@@ -34,6 +34,7 @@ Body: { "url":"https://example.com", "device":"DESKTOP" }
 - **Search filter**: Tab isn't auto selected when we search a particular url.
 - **CORS blocking**: CORS is set to be allow from all origins (Risky in production env).
 - **UI enchancements**: UI is not appealing up to the mark.
+- **Input Check**: handle url input fields to be checked and verified weather the url are in correct format.
 
 
 ### Next Step
