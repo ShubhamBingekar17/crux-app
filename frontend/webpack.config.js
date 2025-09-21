@@ -14,7 +14,7 @@ module.exports = {
     historyApiFallback: true,
     proxy: {
       '/api': {
-        target: 'https://crux-backend-nine.vercel.app',
+        target: 'https://crux-app-backend.onrender.com',
         changeOrigin: true,
         secure: true
       }
