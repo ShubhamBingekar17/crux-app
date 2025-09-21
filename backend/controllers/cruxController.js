@@ -1,4 +1,4 @@
-const { queryCrux } = require("../service/cruxService");
+const { queryCrux } = require("../services/cruxService");
 
 async function getCruxData(req, res) {
   const urls = req.body.urls || [];
